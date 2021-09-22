@@ -1,6 +1,6 @@
 package geo;
 public class Geometrics {
-    private static double x = 10.0;
+    /* private static double x = 10.0;
     private static double y = 5.0;
     private static double z = 3.0;
     private static int x1 = 8;
@@ -11,10 +11,42 @@ public class Geometrics {
     private static int z2 = 129;
     private static int x3 = 45;
     private static int y3 = 89;
-    private static int z3 = 69;
+    private static int z3 = 69; */
+
+    public static int SquareArea(int x, int y) {
+        return x * y;
+    }
+
+    public static int squarePerimeter(int x) {
+        return 4 * x;
+    }
+
+    public static int rectangleArea(int x, int y) {
+        return x * x;
+    }
+
+    public static int rectanglePerimeter(int x, int y) {
+        return x + y;
+    }
+
+    public static double zoneSphere(double x, double y, double z) {
+        return Math.PI * z * (3 * Math.pow(y, 2) + 3 * Math.pow(x, 2) + Math.pow(z, 2)) / 6;
+    }
+
+    public static double cylinderSphere (double z) {
+        return (Math.PI * Math.pow(z, 3) / 6);
+    }
+
+    public static double ungula(double x, double z){
+        return (2 * x * z) / 3;
+    }
+
 
     public static void main(String[] args) {
-        // area ... Fläche
+
+        System.out.println(cylinderSphere(6));
+        
+        /* //area ... Fläche
         System.out.println("Square area");
         System.out.println("x * x = " + x * x);
         System.out.println("x1 * x1 = " + x1 * x1);
@@ -41,10 +73,10 @@ public class Geometrics {
         System.out.println("x3 + y3 = " + x3 + y3);
 
         System.out.println("We can also calculate some volumes");
-        /*
+        
             z is our height
             y is our radius
-         */
+        
         System.out.println("Zone of a sphere");
         double v = (Math.PI * z * (3 * Math.pow(y, 2) + 3 * Math.pow(x, 2) + Math.pow(z, 2))) / 6;
         System.out.println(v);
@@ -52,7 +84,8 @@ public class Geometrics {
         System.out.println("Sphere with cylinder");
         System.out.println(Math.PI * Math.pow(z, 3) / 6);
 
+
         System.out.println("Ungula");
-        System.out.println((double) (2 * x3 * z3) / 3);
+        System.out.println((double) (2 * x3 * z3) / 3); */
     }
 }
